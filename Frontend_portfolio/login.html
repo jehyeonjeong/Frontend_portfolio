@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 | 동서식품</title>
+    <script src="js/login.js"></script>
+    
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header id="top_wrap">
+        <div id="top">
+            <h1><a href="#"><img src="images/logo_red.png" alt="동서식품" width="140" height="31"></a></h1>
+            <nav id="menu_navi">
+                <ul id="menu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제품안내</a></li>
+                    <li><a href="#">홍보센터</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">고객의소리</a></li>
+                </ul>
+            </nav> <!-- lnb -->
+            
+            <ul class="quick">
+                <li><a href="#"><i style="font-size:20px" class="fa">&#xf002;</i></a></li> <!-- 검색 -->
+                <li><a href="login.html"><i style="font-size:20px" class="fa">&#xf007;</i></a></li> <!-- 로그인 -->
+            </ul> <!-- quick -->
+            
+        </div> <!-- #top -->
+    </header>
+    
+    <div id="login_wrap">
+        <div id="login">
+            <div id="logo">
+                <h1><a href="#"><img src="images/logo_eng.png" alt="#" width="305" height="52"></a></h1>
+            </div><!--login_top-->
+
+            <div id="login_con1">
+                <div id="login1" class="login_box">
+                    <form action="#" method="post">
+                        <p><input type="text" id="u_id" placeholder="아이디" autocomplete="off"></p>
+                        <p><input type="password" id="u_pwd" placeholder="비밀번호" autocomplete="off"></p>
+                        <p id="btn_wrap1">
+                            <input type="button" id="s_btn1" value="로그인">
+                        </p>
+
+                        <p id="chk_wrap1">
+                            <input type="checkbox" name="chk" id="chk1" value="1">
+                            <label for="chk1" class="type01 type02">아이디 저장</label>
+                            <input type="checkbox" name="chk" id="chk2" value="2">
+                            <label for="chk2" class="type01 type03">로그인 상태 유지</label>
+                        </p>
+                        <p id="more_wrap1">
+                            <a href="#" class="search1">아이디 찾기</a>
+                            <span class="txt_bar">|</span>
+                            <a href="#" class="search2">비밀번호 찾기</a>
+                            <span class="txt_bar">|</span>
+                            <a href="join.html" class="join1">회원가입</a>
+                        </p>
+                    </form>
+                </div><!---회원 로그인-->
+
+                <div id="login_con2">
+                    <ul>
+                        <li><a href=""><img src="images/naver.svg" alt=""></a><span>네이버 로그인</span></li>
+                        <li><a href=""><img src="images/kakao.svg" alt=""></a><span>카카오 로그인</span></li>
+                    </ul>
+                </div>
+            </div> <!-- login_con -->
+
+
+        </div>
+    </div><!-- login_wrap -->
+</body>
+</html>

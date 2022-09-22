@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+div,h1,img,p,a,ul,li,form,input,label,select,option,span,br {margin: 0; padding: 0;}
+
+::-webkit-scrollbar {display: none;}
+
+body {width: 100%; -webkit-user-select: none;-ms-user-select:none; user-select:none;}
+
+/*top_wrap*/
+#top_wrap {width: 100%; height: 80px; min-width: 1620px; background-color: white;; z-index: 10; border-bottom: 1px solid #ccc;}
+#top {width: 1620px; height: 80px; margin: 0 auto; position: relative;}
+#top h1 {float: left; width: 170px; height: 31px; margin-top: 24px;} /* 로고 */
+#menu_navi {width: 850px; height: 80px; position: absolute; top: 0; left: 50%; transform: translate(-50%,0);}
+#menu {width: 850px; height: 80px; }
+#menu > li {float: left; width: 170px; height: 80px; text-align: center; position: relative; }
+#menu > li  > a {width: 170px; height: 80px; color: black; font-size: 18px; display: block; line-height: 80px;}
+#menu > li:hover  > a {color: #ed1e25; font-weight: bold;}
+#menu > li > .submenu {display: none;}
+
+.quick {height: 31px; position: absolute; top: 24px; right: 0;}
+.quick li {float: left; width: 31px; height: 31px; text-align: center; margin-left: 20px; position: relative;}
+.quick li a {font-size: 14px; line-height: 14px; color: #444;}
+.quick li a:hover {color: #ed1e25;}
+.quick li i {position: absolute; top: 5px; left: 7px;}
+.quick li:first-child {margin-left: 0px;}
+
+/*agree*/
+#agree_wrap {width: 1000px; height: 100%; margin: 0 auto;}
+#agree_wrap h2 {font-size: 24px; text-align: center; line-height: 30px; margin: 50px;}
+.agree h3 {margin: 10px 0;}
+.agree h3 i {margin-right: 10px; color: #444;}
+.agree p {width: 1000px; height: 150px; border: 1px solid #ccc;  padding: 10px; box-sizing: border-box; border-radius: 5px; overflow: scroll; margin-bottom: 50px; font-size: 14px; color: #666;} 
+.agree button {background: #444; color: white;}
+
+#agree_next {float: right; border: 1px solid #ccc; width: 500px; height: 50px; border-radius: 5px; color:#444; font-size: 20px; text-align: center; margin-bottom: 30px; line-height: 50px;} 
+
+/* join */
+#join {width: 1000px; margin: 0 auto;}
+#form_wrap {width: 1000px; border: 1px solid #ccc; margin-bottom: 30px; border-radius: 5px;}
+input {outline: none; border: 1px solid #ccc;}
+.line{height: 50px; border-bottom: 1px solid #ccc; clear: both; } /*공통*/
+.line2 {height: 130px; border-bottom: none;} /*자기소개*/
+.l_con {background-color: white; width: 100px; height: 50px; display: block; float: left; line-height: 50px; text-indent: 10px; } /*좌측 공통*/
+.l_con2 {height: 130px;} /*좌측 자기소개*/
+.r_con {float: left; width: 500px; height: 50px; padding-left: 10px; box-sizing: border-box; line-height: 50px;} 
+.r_con2 {height: 130px;} /*우측 자기소개*/
+#wrap input, #u_tel1, .email3 select, #write {border: 1px solid #ccc;} /*공통*/
+.infor {color: red; font-size: 13px;}
+#u_name, #u_id, #u_pwd {width: 200px; height: 25px; text-indent: 10px;} /* 이름 아이디 패스워드*/
+#chk1, #chk2 {vertical-align: -2px; background: none;} /* 남 여*/
+#wrap #chk1, #wrap #chk2 {border: none;}
+.tel1, .tel2, .tel3, .tel4, .tel5 {float: left;} /*연락처*/
+.tel1 {margin-right: 10px;}
+.tel2, .tel4 {margin: 0 5px;} /*span*/
+#u_tel1, #u_tel2, #u_tel3 {width: 100px; height: 25px;} /*연락처 select, input*/
+.email1, .email2, .email3 {float: left;} /*이메일*/
+.email2 {margin: 0 5px;} /* span @*/
+#u_emil, .email3 select {height: 25px; text-indent: 10px;} /*이메일 input, select*/
+
+.btn {text-align: center; height: 30px; margin-top: 10px; margin-bottom: 100px;}
+.btn input {width: 100px; height: 25px;}
+.btn input:hover {background-color: #999999; color: white; cursor: pointer;}
